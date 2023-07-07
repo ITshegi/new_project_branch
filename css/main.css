@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+}
+[mytitle] {
+    cursor: pointer;
+}
+[mytitle]::after {
+    content: '';
+    transition: 0.2s;
+}
+[mytitle]:hover::after {
+    width: 550px;
+    display: block;
+    content: attr(mytitle);
+    background-color: orange;
+    padding: 10px;
+    z-index: 100;
+}
